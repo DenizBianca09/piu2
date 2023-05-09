@@ -1,0 +1,10 @@
+<h1>{{error}}</h1>
+<div class ="items">
+  <div *ngFor="let item of itemList" class="item">
+    <p>Name: {{item.name}}</p>
+    <p> Descriere: {{item.category}} </p>
+    <p> cantitate: {{item.number}}</p>
+    <button> edit</button>
+  </div>
+  
+<button mat-raised-button color="accent" (click)="openDialog(0)">add</button>
